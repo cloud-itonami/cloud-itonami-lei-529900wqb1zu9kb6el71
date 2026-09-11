@@ -53,7 +53,7 @@ They are facts about GLEIF's record and are checked against GLEIF like any other
 value; whether those sites answer from any given network is a separate question
 and not one this repository claims.
 
-`nbb scripts/verify-facts.cljk` re-fetches those sources and compares. It exits
+`kbb --backend sci scripts/verify-facts.cljk` re-fetches those sources and compares. It exits
 `0` when the live registry still agrees, `1` when a citation is dead or a value
 drifted, and `3` when it could not check at all (sources unreachable, `facts.edn`
 missing or unreadable) — a run that could not answer must not look like a pass.
